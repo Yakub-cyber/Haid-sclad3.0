@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Redirecting...</title>
+	</head>
+	<body>
+		<script>
+			// GitHub Pages SPA redirect
+			const path = window.location.pathname
+			const base = './'
+
+			// If we're not already at the base path, redirect
+			if (!path.startsWith(base) || path === base) {
+				window.location.href = base
+			} else {
+				// For any other path, redirect to base (SPA will handle routing)
+				window.location.href = base
+			}
+		</script>
+	</body>
+</html>
