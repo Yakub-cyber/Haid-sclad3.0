@@ -22,6 +22,7 @@
 
    - Settings → Pages
    - Source: GitHub Actions
+   - Branch: gh-pages (создастся автоматически)
 
 4. **Готово!**
    - Приложение будет доступно по адресу: `https://YOUR_USERNAME.github.io/Haid-sclad3.0/`
@@ -32,3 +33,9 @@
 - Перейдите в Actions в вашем репозитории
 - Убедитесь, что workflow "Deploy to GitHub Pages" выполнился успешно
 - Откройте ваш сайт по ссылке выше
+
+## Если возникает ошибка с git:
+
+1. Убедитесь, что репозиторий публичный
+2. Проверьте, что у Actions есть права на запись в репозиторий
+3. В Settings → Actions → General убедитесь, что "Workflow permissions" установлены в "Read and write permissions"
